@@ -39,7 +39,7 @@ resource "aws_security_group" "maheshSG" {
   tags = {
     "Name" = "Mahesh Security Group"
   }
-}
+
 #Specify Inbound Rule for port 22
  ingress {
     description = "Allow port 22"
@@ -63,6 +63,7 @@ resource "aws_security_group" "maheshSG" {
     to_port =0
     protocol = "-1"
     cidr_blocks = ["0.0.0.0/0"]
+}
 }
 
 
